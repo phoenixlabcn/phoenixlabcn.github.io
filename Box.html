@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function getVconSoleFromIFrame() {
+            var ff = window.frames[0];
+            var copyClass = ff.VConsole;
+            window.VConsole = ff.VConsole;
+
+            var ee = new  VConsole();
+
+        }
+
+    </script>
+</head>
+<body>
+<iframe src="index.html" id="ff"></iframe>
+<button onclick="getVconSoleFromIFrame()"></button>
+</body>
+</html>
